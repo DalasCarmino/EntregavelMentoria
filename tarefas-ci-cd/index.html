@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicação simples para organizar tarefas.">
+  <title>TaskFlow — Minhas tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="eyebrow">ORGANIZAÇÃO PESSOAL</span>
+      <h1>Minhas tarefas<span>.</span></h1>
+      <p>Um passo de cada vez. Organize seu dia.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <label class="sr-only" for="task-input">Nova tarefa</label>
+      <input id="task-input" type="text" placeholder="O que você precisa fazer?" maxlength="100" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section class="panel" aria-labelledby="list-title">
+      <div class="panel-heading">
+        <h2 id="list-title">Sua lista</h2>
+        <span id="task-count">0 tarefas</span>
+      </div>
+      <ul id="task-list" aria-live="polite"></ul>
+      <p id="empty-state">Nenhuma tarefa por enquanto. Adicione a primeira!</p>
+      <button id="clear-completed" class="clear-button" type="button">Limpar concluídas</button>
+    </section>
+    <footer>TaskFlow · Projeto de demonstração de CI/CD</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "taskflow-ci-cd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicação simples de tarefas com pipeline CI/CD",
+  "scripts": {
+    "test": "node --test"
+  }
+}
